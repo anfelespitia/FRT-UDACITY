@@ -14,7 +14,7 @@ python -m SimpleHTTPServer
 
 After it starts, you can navigate to http://0.0.0.0:8000/index.html in your preferred browser.
 
-Alternatively, you may view the app on GitHub Pages: http://anfelespitia.github.io/FRT-UDACITY/
+Alternatively, you may view the app on GitHub Pages: https://anfelespitia.github.io/FRT-UDACITY/
 
 ## Project Requirements
 - Original Project assets.
