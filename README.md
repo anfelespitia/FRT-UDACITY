@@ -40,4 +40,4 @@ No test should be dependent on the results of another.
 - When complete - all of your tests should pass.
 
 ## Credits
-The test cases were developed by Marium Talha for the Udacity FrontEnd Web development Course using the starter code provided by Udacity. Special thanks to the sudent leaders and the peers taking the course.
+The test cases were developed by Andres Espitia for the Udacity FrontEnd Web development Course using the starter code provided by Udacity. 
