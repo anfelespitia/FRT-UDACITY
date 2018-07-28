@@ -1,9 +1,5 @@
-Feed Reader Testing
-This was completed as a project within Udacity's Front-End Web Developer Nanodegree program.
-
-A web-based application that reads RSS feeds was provided. The original developer had begun to run a couple basic tests, but quit without finishing the app's test suite. The challenge in this project was to practice test-driven development by using Jasmine to write tests against the pre-existing application. These test the underlying business logic of the application as well as the event handling and DOM manipulation.
-
-Feed Reader screenshot
+## Feed Reader Testing
+This project demonstrates the use of the JAsmine framework for JAvaScript testing using the vehicle of a completed feed reader.
 
 ## How to View This Page
 Clone or download this repository, then open index.html in your browser after starting a simple web server.
