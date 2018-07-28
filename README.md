@@ -1,5 +1,5 @@
 ## Feed Reader Testing
-This project demonstrates the use of the JAsmine framework for JAvaScript testing using the vehicle of a completed feed reader.
+This project demonstrates the use of the Jasmine framework for JavaScript testing using the vehicle of a completed feed reader.
 
 ## How to View This Page
 Clone or download this repository, then open index.html in your browser after starting a simple web server.
