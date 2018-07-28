@@ -6,9 +6,9 @@ Clone or download this repository, then open index.html in your browser after st
 
 The easiest way is to use SimpleHTTPServer if you already have Python installed (it comes pre-installed on most Mac OS X and Linux computers). In a terminal window, cd into the downloaded directory and run the following command:
 
-python -m SimpleHTTPServer
+- python -m SimpleHTTPServer
 
-After it starts, you can navigate to http://0.0.0.0:8000/index.html in your preferred browser.
+- After it starts, you can navigate to http://0.0.0.0:8000/index.html in your preferred browser.
 
 
 ## Project Requirements
