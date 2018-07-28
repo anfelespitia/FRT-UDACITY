@@ -38,3 +38,6 @@ No test should be dependent on the results of another.
 - Implement error handling for undefined variables and out-of-bound array access.
 
 - When complete - all of your tests should pass.
+
+## Credits
+The test cases were developed by Marium Talha for the Udacity FrontEnd Web development Course using the starter code provided by Udacity. Special thanks to the sudent leaders and the peers taking the course.
