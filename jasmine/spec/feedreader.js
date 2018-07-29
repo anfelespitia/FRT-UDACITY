@@ -1,4 +1,4 @@
-/* feedreader.js
+* feedreader.js
  *
  * This is the spec file that Jasmine will read and contains
  * all of the tests that will be run against your application.
@@ -35,48 +35,36 @@ $(function() {
 
 
     describe('The Menu', function() {
-             const body = document.querySelector('body');
-             const menuIcon = document.querySelector('.icon-list');
-        
         // Checks to see if the menu is hidden by default.
-        it('is hidden by default', function() {
-      // Error handling for undefined variables
-      expect(document.querySelector('.menu-icon-link')).toBeDefined();
-      expect(menuIcon).toBeDefined();
-      expect(body.classList.contains('menu-hidden')).toBeDefined();
-      // Make sure menu is hidden by default
-      expect(body.classList.contains('menu-hidden')).toBeTruthy();
-    });
+        it('Menu is hidden by default', function() {
+          expect($('body').hasClass('menu-hidden')).toBe(true);
+        });
 
         // Checks to see if the menu displays when clicked and hides when clicked again.
-        it('changes visibility when clicked', function() {
-      // Does the menu display when clicked
-      menuIcon.click();
-      expect(body.classList.contains('menu-hidden')).toBeFalsy();
+        it('Menus are visible', function() {
+          // Uses the jqury .click() method.
+          $('.icon-list').click();
+          expect($('body').hasClass('menu-hidden')).toBe(false);
 
-      // Does the menu hide when clicked again
-      menuIcon.click();
-      expect(body.classList.contains('menu-hidden')).toBeTruthy();
+          $('.icon-list').click();
+          expect($('body').hasClass('menu-hidden')).toBe(true);
+        });
     });
-  });
 
     describe('Initial Entries', function() {
          // Calls loadFeed() before the tests are performed.
-         beforeEach(function(done){
-      loadFeed(0, done);
-    });
+         beforeEach(function(done) {
+           loadFeed(0, function() {
+             done();
+           });
+         });
 
-         //Ensure there is at least one .entry element within the .feed container
-    it('have at least one element', function(done) {
-      // Error handling for out-of-bound array access
-      expect(allFeeds[0]).toBeDefined();
-      // Error handling for undefined variables
-      expect(document.querySelector('.feed').children).toBeDefined();
-      // Make sure there is an entry
-      expect((document.querySelector('.feed').children).length).toBeGreaterThan(0);
-      done();
+         // Checks to see if the .feed container has at least 1 child .entry element.
+         it('Should be at least single element after the loadFeed function is called', function(done) {
+           expect($('.feed .entry').length).toBeGreaterThan(0);
+           done();
+         });
     });
-  });
 
 
   describe('New Feed Selection', function() {
